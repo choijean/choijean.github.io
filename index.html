@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jean Choi</title>
+  <title>Jean Choi's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
   <!-- Custom CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome/all.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/fontawesome/all.css">
   <!-- Scripts -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script> -->
-  <!-- FontAwesome -->
-  <!-- <script type="text/javascript" src="https://use.fontawesome.com/72dd858d42.js"></script> -->
-  <!-- Bootstrap -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/title.js"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+  <!-- FontAwesome -->
+  <script type="text/javascript" src="https://use.fontawesome.com/72dd858d42.js"></script>
 </head>
 
 <!-- Content -->
@@ -23,8 +23,8 @@
   <!-- Navbar -->
   <a class="menu-toggle" href="#"><i class="fa fa-bars"></i></a>
   <nav id="navbar-wrapper">
-    <ul class="navbar">
-      <li class="nav-item"><a href="#AboutMe">About Me</a></li>
+    <ul class="navbar text-right">
+      <li class="nav-item"><a href="#about-me">About Me</a></li>
       <li class="nav-item"><a href="#Technologies">Technologies</a></li>
       <li class="nav-item"><a href="#Projects">Projects</a></li>
       <li class="nav-item"><a href="#Contact">Contact</a></li>
@@ -32,23 +32,31 @@
   </nav>
 
   <!-- About me -->
-  <section id="AboutMe">
-    About Section
+  <section id="about-me">
+    <div class="name text-center">
+      <h1>Jean Choi: 
+        <span
+          class="text-rotate"
+          data-period="2000"
+          data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+      </h1>
+    </div>
+    <button type="button" class="btn btn-primary">Primary</button>
   </section>
 
   <!-- Technologies -->
   <section id="Technologies">
-    Tech Section
+    Tech
   </section>
 
   <!-- Projects -->
   <section id="Projects">
-    Projects Section
+    Projects
   </section>
 
   <!-- Contact -->
   <section id="Contact">
-    Contact Section
+    Contact
   </section>
 
   <!-- Footer -->
