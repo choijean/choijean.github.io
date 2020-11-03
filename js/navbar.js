@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Closes the navbar menu
+  // Open/closes the navbar menu
   $(".menu-toggle").click(function (e) {
     e.preventDefault();
     $("#navbar-wrapper").toggleClass("active");
@@ -27,5 +27,22 @@ $(document).ready(function () {
   //     $("body").addClass("active");
   //   })
   // }
+
+  // Detect if window has been scrolled
+  $(window).scroll(function () {
+    var $win = $(window);
+    if ($win.scrollTop() > 200) {
+      // $('.up-arrow').addClass('active');
+      $('.go-to-top').addClass('active');
+    } else {
+      // $('.up-arrow').removeClass('active');
+      $('.go-to-top').removeClass('active');
+    }
+  });
+
+  // Scroll to top
+  $('.go-to-top').click(function (e) {
+    e.preventDefault();
+  })
 });
 

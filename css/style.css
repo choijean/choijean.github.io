@@ -141,11 +141,9 @@ li.nav-item a:hover {
 }
 .mini-social-links {
   align-self: flex-start;
+  padding:0;
 }
 .mini-social-links ul {
-  /* display: flex;
-  justify-content: start; */
-	padding: 0rem 0rem 0rem 0rem;
 	list-style: none;
 	width: 100%;
 }
@@ -225,6 +223,43 @@ li.nav-item a:hover {
   color: white;
   font-size: 20px;
   line-height: 200%;
+}
+
+/* GO TOP ARROW */
+.go-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+  background: black;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.go-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+.go-to-top > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.go-to-top:focus, .go-to-top:hover {
+  color:white;
+}
+.go-to-top:hover {
+  background: var(--menu-button);
 }
 
 /* FOOTER SECTION */
