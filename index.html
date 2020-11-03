@@ -25,15 +25,16 @@
   <nav id="navbar-wrapper">
     <ul class="navbar text-right">
       <li class="nav-item"><a href="#about-me">About Me</a></li>
-      <li class="nav-item"><a href="#Technologies">Technologies</a></li>
-      <li class="nav-item"><a href="#Projects">Projects</a></li>
-      <li class="nav-item"><a href="#Contact">Contact</a></li>
+      <li class="nav-item"><a href="#technologies">Technologies</a></li>
+      <li class="nav-item"><a href="#projects">Projects</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- About me -->
   <section id="about-me">
     <div class="name text-center">
+      <img src="images/jean.png" id="jean-img" alt="Jean Choi">
       <h1>Jean Choi: 
         <span
           class="text-rotate"
@@ -41,22 +42,60 @@
           data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
       </h1>
     </div>
-    <button type="button" class="btn btn-primary">Primary</button>
   </section>
 
   <!-- Technologies -->
-  <section id="Technologies">
+  <section id="technologies">
     Tech
   </section>
 
   <!-- Projects -->
-  <section id="Projects">
+  <section id="projects">
     Projects
   </section>
 
   <!-- Contact -->
-  <section id="Contact">
-    Contact
+  <section id="contact">
+    <h2>Say Hello!</h2>
+    <form action="https://formspree.io/f/mknpbvbv" method="POST" class="container center" id="form-message">
+      <div class="row form-group justify-content-md-center">
+        <div class="col-md-4">
+          <label for="name" class="d-none">Name: </label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="d-none">Email: </label>
+          <input type="text" id="email" name="email" class="form-control" placeholder="E-mail" required>
+        </div>
+      </div>
+      <div class="row form-group justify-content-md-center">
+        <div class="col-md-8">
+          <label for="subject" class="d-none">Subject: </label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+        </div>
+      </div>
+      <div class="row form-group justify-content-md-center">
+        <div class="col-md-8">
+          <label for="message" class="d-none">Message: </label>
+          <textarea name="message" id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Hi Jean!"></textarea>
+        </div>
+      </div>
+      <div class="row form-group justify-content-md-center">
+          <input type="submit" value="Send!" class="btn-primary">
+      </div>
+    </form>	
+
+    <i class="fab fa-github"></i>
+
+    <div class="social-links">
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+
   </section>
 
   <!-- Footer -->

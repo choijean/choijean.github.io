@@ -17,6 +17,19 @@ html, body {
   box-sizing: border-box;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: var(--pink-light) !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #8064A2;
+    border-color: #8064A2;
+}
+
 /* NAVBAR */
 #navbar-wrapper {
 	top: 0;
@@ -90,14 +103,46 @@ li.nav-item a:hover {
   width: 100%;
   height: 100%;
   background-color: var(--pink-light);
-  /* background-size: cover;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-repeat: no-repeat; */
+  /* background-repeat: no-repeat; */
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.name {
-  border:solid black;
-  display: inline-block;
+
+#jean-img {
+  /* display:flex; */
+  width: 10em;
+  margin: 20px;
+}
+
+/* TECHNOLOGY SECTION */
+#technologies {
+  height: 100%;
+  background-color: var(--pink-dark);
+}
+
+/* PROJECTS SECTION */
+#projects{
+  height: 100%;
+  background-color: var(--pink-light);
+}
+
+/* CONTACT SECTION */
+#contact{
+  height: 60%;
+  background-color: var(--pink-dark);
+}
+
+#form-message {
+
 }
