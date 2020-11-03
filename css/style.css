@@ -17,17 +17,40 @@ html, body {
   box-sizing: border-box;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-  background-color: var(--pink-light) !important;
+.btn,
+.btn:active,
+.btn:visited {
+  color: white;
+  background-color: var(--navbar-bg);
+  border-color: var(--navbar-bg);
+}
+.btn:hover,
+.btn:focus {
+  color: white;
+  background-color: var(--menu-button);
+  border-color: var(--menu-button);
 }
 
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-    background-color: #8064A2;
-    border-color: #8064A2;
+h2,h3,h4,h5{
+  display:flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+h4,h5 {
+  padding: 1rem;
+}
+
+hr {
+  width:90%;
+}
+
+a {
+  color: var(--menu-button);
+}
+
+a:hover{
+  color: var(--navbar-bg);
 }
 
 /* NAVBAR */
@@ -46,7 +69,7 @@ html, body {
   position: absolute;
   display: inline-block;
   margin: 0;
-	padding: 0 20px 0 0;
+	padding: 0 .5rem 0 0;
 	list-style: none;
 	width: 100%;
 	top: 15%;
@@ -139,10 +162,42 @@ li.nav-item a:hover {
 
 /* CONTACT SECTION */
 #contact{
-  height: 60%;
+  /* height: 60%; */
   background-color: var(--pink-dark);
 }
 
-#form-message {
-
+#form-message{
+  padding-bottom: 1rem;
 }
+
+.social-links {
+  display:flex;
+}
+.social-links ul {
+  display: flex;
+  justify-content: center;
+	padding: 1rem 0rem 1rem 0rem;
+	list-style: none;
+	width: 100%;
+}
+
+.social-links li {
+  float: left;
+  background-color: var(--pink-dark);
+}
+
+.social-links li a {
+  display: block;
+  margin: 0rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+/* FOOTER SECTION */
+footer {
+  padding: 2.5rem 0rem 2rem;
+  background-color: var(--pink-light);
+}
+

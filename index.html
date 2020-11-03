@@ -8,14 +8,25 @@
   <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome/all.css"> -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link href="/fontawesome/fontawesome.css" rel="stylesheet">
+  <link href="/fontawesome/brands.css" rel="stylesheet">
+  <link href="/fontawesome/solid.css" rel="stylesheet"> -->
   <!-- Scripts -->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/navbar.js"></script>
   <script type="text/javascript" src="js/title.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/1244e90197.js" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-  <!-- FontAwesome -->
-  <script type="text/javascript" src="https://use.fontawesome.com/72dd858d42.js"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="images/favicon//site.webmanifest">
+  <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <!-- Content -->
@@ -24,10 +35,10 @@
   <a class="menu-toggle" href="#"><i class="fa fa-bars"></i></a>
   <nav id="navbar-wrapper">
     <ul class="navbar text-right">
-      <li class="nav-item"><a href="#about-me">About Me</a></li>
-      <li class="nav-item"><a href="#technologies">Technologies</a></li>
-      <li class="nav-item"><a href="#projects">Projects</a></li>
-      <li class="nav-item"><a href="#contact">Contact</a></li>
+      <li class="nav-item"><a class="scroll" href="#about-me">About Me</a></li>
+      <li class="nav-item"><a class="scroll" href="#technologies">Technologies</a></li>
+      <li class="nav-item"><a class="scroll" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="scroll" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -46,12 +57,14 @@
 
   <!-- Technologies -->
   <section id="technologies">
-    Tech
+    <h2>Technology</h2>
+    <h3>(Coming Soon)</h3>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    Projects
+    <h2>Projects</h2>
+    <h3>(Coming Soon)</h3>
   </section>
 
   <!-- Contact -->
@@ -81,23 +94,37 @@
         </div>
       </div>
       <div class="row form-group justify-content-md-center">
-          <input type="submit" value="Send!" class="btn-primary">
+        <button type="submit" class="btn">
+          <i class="fas fa-paper-plane"></i> Submit
+        </button>
       </div>
-    </form>	
+    </form>
 
-    <i class="fab fa-github"></i>
-
+    <hr>
+    <h4>Connect with me:</h4>
     <div class="social-links">
       <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin-in icon-3x"></i></a></li>
+        <!-- <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin icon-3x"></i></a></li> -->
+        <li><a href="https://github.com/choijean"><i class="fab fa-github icon-3x"></i></a></li>
+        <!-- <li><a href="https://github.com/choijean"><i class="fab fa-github-square icon-3x"></i></a></li> -->
+        <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram icon-3x"></i></a></li>
+        <!-- <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram-square icon-3x"></i></a></li> -->
+        <!-- <li><a href="https://airbnb.com/h/brady"><i class="fab fa-airbnb icon-3x"></i></a></li> -->
+        <li><a href="https://open.spotify.com/user/jeanchoiii?si=357BNHN6SaG-CjDLXjXSxA"><i class="fab fa-spotify icon-3x"></i></a></li>
+        <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam icon-3x"></i></a></li>
+        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-square icon-3x"></i></a></li> -->
+        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-symbol icon-3x"></i></a></li> -->
+        <li><a href="discord.html"><i class="fab fa-discord" title="jean#5379"></i></a></li>
       </ul>
     </div>
 
   </section>
 
   <!-- Footer -->
+  <footer class="text-center">
+    <p>Author: Jean Choi 2020</p>
+    <a href="mailto:jean.yj.choi@gmail.com">jean.yj.choi@gmail.com</a> 
+  </footer>
 </body>
 </html>
