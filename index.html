@@ -4,26 +4,18 @@
   <title>Jean Choi's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
-  <!-- Custom CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome/all.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link href="/fontawesome/fontawesome.css" rel="stylesheet">
-  <link href="/fontawesome/brands.css" rel="stylesheet">
-  <link href="/fontawesome/solid.css" rel="stylesheet"> -->
-  <!-- Scripts -->
+    <!-- Scripts/JQuery 3.2.1-->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/navbar.js"></script>
   <script type="text/javascript" src="js/title.js"></script>
-  <!-- FontAwesome -->
+  <!-- Bootstrap 4.5.2 -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- FontAwesome 5.15.1 -->
   <script src="https://kit.fontawesome.com/1244e90197.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
@@ -37,13 +29,15 @@
 <!-- Content -->
 <body>
   <!-- Navbar -->
-  <a class="menu-toggle" href="#"><i class="fa fa-bars"></i></a>
+  <a class="menu-toggle" href="#" data-toggle="tooltip" data-placement="left" title="Menu"><i class="fa fa-bars"></i></a>
   <nav id="navbar-wrapper">
     <ul class="navbar text-right">
       <li class="nav-item"><a class="scroll" href="#about-me">About Me</a></li>
-      <li class="nav-item"><a class="scroll" href="#technologies">Technologies</a></li>
       <li class="nav-item"><a class="scroll" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="scroll" href="#technologies">Technologies</a></li>
       <li class="nav-item"><a class="scroll" href="#contact">Contact</a></li>
+      <!-- TODO: add toolbox link -->
+      <!-- <a href="/toolbox.html" data-toggle="tooltip" data-placement="left" title="Toolbox"><i class="fas fa-toolbox"></i></a> -->
     </ul>
   </nav>
 
@@ -51,8 +45,11 @@
   <section id="banner">
     <div class="mini-social-links">
       <ul>
-        <li><a href="https://github.com/choijean"><i class="fab fa-github icon-3x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin-in icon-3x"></i></a></li>
+        <li><a href="https://github.com/choijean" data-toggle="tooltip" data-placement="right" title="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jean-choi/" data-toggle="tooltip" data-placement="right" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <!-- TO DO : DARK MODE -->
+        <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dark Mode"><i class="fas fa-lightbulb"></i></a></li> -->
+        <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dark Mode"><i class="far fa-lightbulb"></i></a></li> -->
       </ul>
     </div>
     <div class="name text-center">
@@ -66,7 +63,7 @@
   </section>
   
   <!-- About me -->
-  <section id="about-me">
+  <section id="about-me" class="pb-5">
     <h2>About me</h2>
     <div class="container">
       <div class="row justify-content-md-center">
@@ -94,15 +91,197 @@
     </div>
     </section>
 
+  <!-- Projects -->
+  <section id="projects" class="pb-5">
+    <h2>Projects</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Bonspiel -->
+        <div class="col-md-6 col-sm-6 col-sm-12 d-flex align-items-stretch p-3">
+          <div class="card shadow-lg text-center ">
+            <div id="bonspielCarouselIndicators" class="carousel slide" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#bonspielCarouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#bonspielCarouselIndicators" data-slide-to="1"></li>
+                <li data-target="#bonspielCarouselIndicators" data-slide-to="2"></li>
+                <li data-target="#bonspielCarouselIndicators" data-slide-to="3"></li>
+                <li data-target="#bonspielCarouselIndicators" data-slide-to="4"></li>
+                <li data-target="#bonspielCarouselIndicators" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/projects/bonspiel/bonspiel.png" class="d-block img-fluid" alt="mainpage">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/bonspiel/adminusers.png" class="d-block img-fluid" alt="admin user page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/bonspiel/batchupload.png" class="d-block img-fluid" alt="batch upload page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/bonspiel/admin.png" class="d-block img-fluid" alt="admin page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/bonspiel/schedule.png" class="d-block img-fluid" alt="schedule page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/bonspiel/teamlist.png" class="d-block img-fluid" alt="team list page">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#bonspielCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#bonspielCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bonspiel Tracking System</h5>
+              <p class="card-text">Full stack web application to track and manage bonspiels (curling events).</p>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="https://youtu.be/UMq22dFbFVM?t=25" class="btn btn-primary"><i class="fas fa-chalkboard-teacher"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plants -->
+        <div class="col-md-6 col-sm-6 col-sm-12 d-flex align-items-stretch p-3">
+          <div class="card shadow-lg text-center">
+            <div id="plantsCarouselIndicators" class="carousel slide" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#plantsCarouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#plantsCarouselIndicators" data-slide-to="1"></li>
+                <li data-target="#plantsCarouselIndicators" data-slide-to="2"></li>
+                <li data-target="#plantsCarouselIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/projects/plants/search.png" class="d-block img-fluid" alt="main search page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/plants/filter.png" class="d-block img-fluid" alt="filter plants page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/plants/results.png" class="d-block img-fluid" alt="results page">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/plants/weather.png" class="d-block img-fluid" alt="weather page">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#plantsCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#plantsCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">PlantsPlantsPlants!</h5>
+              <p class="card-text">Full stack web application search for care information about any plant.</p>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="https://plantsplantsplants.herokuapp.com/" class="btn btn-primary mt-auto"><i class="fas fa-desktop"></i> Site</a>
+              <a href="https://github.com/rsu819/CS465-565_Final_Project" class="btn btn-primary"><i class="fas fa-laptop-code"></i> GitHub</a>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Fractals -->
+        <div class="col-md-6 col-sm-6 col-sm-12 d-flex align-items-stretch p-3">
+          <div class="card shadow-lg text-center">
+            <div id="fractalCarouselIndicators" class="carousel slide" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#fractalCarouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="1"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="2"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="3"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="4"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="5"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="6"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="7"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="8"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="9"></li>
+                <li data-target="#fractalCarouselIndicators" data-slide-to="10"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/projects/fractals/wheathaze.png" class="d-block img-fluid" alt="wheat haze fractal">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/jean.png" class="d-block img-fluid" alt="ifs jean">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/beach.png" class="d-block img-fluid" alt="beach">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/kochWinter.png" class="d-block img-fluid" alt="koch winter">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/bernsleyFern.png" class="d-block img-fluid" alt="bernsley fern">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/mandelbrot2.png" class="d-block img-fluid" alt="mandelbrot">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/sierpinskiTriIFS.png" class="d-block img-fluid" alt="sierpinski triangle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/seaweedright.png" class="d-block img-fluid" alt="seaweed right">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/seaweedleft.png" class="d-block img-fluid" alt="seaweed left">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/dragon curve.png" class="d-block img-fluid" alt="dragon curve">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/fractals/kochSnowflakeCombined.png" class="d-block img-fluid" alt="koch snowflake">
+                </div>
+
+              </div>
+              <a class="carousel-control-prev" href="#fractalCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#fractalCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fractals</h5>
+              <p class="card-text">Portfolio of fractal images generated by Lindenmayer systems, recursive decomposition and iterated function systems.</p>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="https://github.com/choijean/Fractals" class="btn btn-primary"><i class="fas fa-laptop-code"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <!-- Cheat Sheets -->
+        <!-- GitHub Pages -->
+      </div>
+
+
+
+    </div>
+
+
+  </section>
+
+
   <!-- Technologies -->
   <section id="technologies">
     <h2>Technology</h2>
-    <h3>(Coming Soon)</h3>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
     <h3>(Coming Soon)</h3>
   </section>
 
@@ -145,30 +324,30 @@
     <h4>Connect with me:</h4>
     <div class="social-links">
       <ul>
-        <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin-in icon-3x"></i></a></li>
-        <!-- <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin icon-3x"></i></a></li> -->
-        <li><a href="https://github.com/choijean"><i class="fab fa-github icon-3x"></i></a></li>
-        <!-- <li><a href="https://github.com/choijean"><i class="fab fa-github-square icon-3x"></i></a></li> -->
-        <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram icon-3x"></i></a></li>
-        <!-- <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram-square icon-3x"></i></a></li> -->
-        <!-- <li><a href="https://airbnb.com/h/brady"><i class="fab fa-airbnb icon-3x"></i></a></li> -->
-        <li><a href="https://open.spotify.com/user/jeanchoiii?si=357BNHN6SaG-CjDLXjXSxA"><i class="fab fa-spotify icon-3x"></i></a></li>
-        <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam icon-3x"></i></a></li>
-        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-square icon-3x"></i></a></li> -->
-        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-symbol icon-3x"></i></a></li> -->
-        <li><a href="discord.html"><i class="fab fa-discord" title="jean#5379"data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></a></li>
-
-        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin-in"></i></a></li>
+        <!-- <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin"></i></a></li> -->
+        <li><a href="https://github.com/choijean"><i class="fab fa-github"></i></a></li>
+        <!-- <li><a href="https://github.com/choijean"><i class="fab fa-github-square"></i></a></li> -->
+        <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram"></i></a></li>
+        <!-- <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram-square"></i></a></li> -->
+        <!-- <li><a href="https://airbnb.com/h/brady"><i class="fab fa-airbnb"></i></a></li> -->
+        <li><a href="https://open.spotify.com/user/jeanchoiii?si=357BNHN6SaG-CjDLXjXSxA"><i class="fab fa-spotify"></i></a></li>
+        <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam"></i></a></li>
+        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-square"></i></a></li> -->
+        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-symbol"></i></a></li> -->
+        <li><a data-toggle="tooltip" data-placement="top" title="jean#5379"><i class="fab fa-discord"></i></a></li>
       </ul>
     </div>
 
   </section>
 
-  <a href="#banner" class="go-to-top scroll"><i class="fas fa-angle-double-up"></i></a>
+  <a href="#banner" class="go-to-top scroll"data-toggle="tooltip" data-placement="left" title="Back to Top">
+    <i class="fas fa-angle-double-up"></i>
+  </a>
   
   <!-- Footer -->
   <footer class="text-center">
-    <p>Author: Jean Choi 2020</p>
+    <p>Jean Choi <i class="far fa-copyright"></i> 2020</p>
     <a href="mailto:jean.yj.choi@gmail.com">jean.yj.choi@gmail.com</a> 
     <hr>
     <div class="container">
@@ -176,7 +355,7 @@
         <div class="col-md-6 offset">
           <p>
             About this page: <br>
-            This page was written using HTML, CSS, JavaScript, and JQuery,
+            This page was written using HTML, CSS, JavaScript, JQuery,
             and the Bootstrap and FontAwesome frameworks. <br> 
             I drew the favicon in Aseprite!
           </p>

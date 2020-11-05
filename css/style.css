@@ -180,7 +180,6 @@ li.nav-item a:hover {
 /* ABOUT ME SECTION */
 #about-me {
   background-color: var(--pink-medium);
-  padding-bottom: 2rem;
 }
 
 #jean-img {
@@ -204,21 +203,37 @@ li.nav-item a:hover {
   padding: 2rem;
 }
 
-/* TECHNOLOGY SECTION */
-#technologies {
-  height: 100%;
+/* PROJECTS SECTION */
+#projects{
   background-color: var(--pink-dark);
 }
 
-/* PROJECTS SECTION */
-#projects{
+.carousel-item img {
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+  filter: invert(100%);
+}
+
+.carousel-indicators {
+  bottom: -2rem;
+}
+
+/* TECHNOLOGY SECTION */
+#technologies {
   height: 100%;
   background-color: var(--pink-light);
 }
 
 /* CONTACT SECTION */
 #contact{
-  /* height: 60%; */
   background-color: var(--pink-dark);
 }
 
@@ -257,6 +272,11 @@ li.nav-item a:hover {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+
+.social-links li a:not([href]),
+.social-links li a:not([href]):hover{
+  color: white;
 }
 
 .social-links li a:hover {

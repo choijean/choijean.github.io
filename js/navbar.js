@@ -1,19 +1,25 @@
 $(document).ready(function () {
+
+  // Enable tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
   // Open/closes the navbar menu
   $(".menu-toggle").click(function (e) {
     e.preventDefault();
     $("#navbar-wrapper").toggleClass("active");
     $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
     $(this).toggleClass("active");
+    // TO DO: Change title to 'close' when active
   });
-  // Smoothscroll script
+  // Smooth scroll
   $(".scroll").click(function (e) {
     e.preventDefault();
-    var dis = $(this),
-      target = dis.attr("href"),
+    target = $(this).attr("href"),
       offset = parseInt($(target).offset().top),
       header = $(".navbar");
-    dis.addClass("active").parent().siblings().find(".scroll").removeClass("active");
+    $(this).addClass("active").parent().siblings().find(".scroll").removeClass("active");
     $('html,body').stop().animate({ scrollTop: offset }, 200);
   });
   // Closes menu on click
@@ -22,32 +28,18 @@ $(document).ready(function () {
     $(".menu-toggle").removeClass("active");
     $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
   });
-  // if ($(window).width() > 991) {
-  //   $(window).on("load", function (e) {
-  //     $("body").addClass("active");
-  //   })
-  // }
 
-  // Detect if window has been scrolled
+  // Detect if window has been scrolled (for gototop button)
   $(window).scroll(function () {
     var $win = $(window);
-    if ($win.scrollTop() > 200) {
-      // $('.up-arrow').addClass('active');
-      $('.go-to-top').addClass('active');
-    } else {
-      // $('.up-arrow').removeClass('active');
-      $('.go-to-top').removeClass('active');
-    }
+    $('.go-to-top').toggleClass('active', $win.scrollTop() > 200);
   });
 
   // Scroll to top
   $('.go-to-top').click(function (e) {
     e.preventDefault();
   })
-  // Enable tooltip
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+
 
 });
 
