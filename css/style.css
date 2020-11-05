@@ -99,13 +99,13 @@ li.nav-item a:hover {
 /* MENU BUTTON */
 .menu-toggle {
   position: fixed;
-  right: 30px;
-  top: 30px;
+  right: 1.5rem;
+  top: 1.5rem;
   color: white;
   background: black;
   z-index: 999;
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
 }
 .menu-toggle > i {
   position: absolute;
@@ -140,27 +140,37 @@ li.nav-item a:hover {
   flex-direction: column;
 }
 .mini-social-links {
+  position: relative;
+  left: 1.5rem;
+  top: 1.5rem;
   align-self: flex-start;
-  padding:0;
 }
 .mini-social-links ul {
 	list-style: none;
-	width: 100%;
-}
-
-.mini-social-links li {
-  float: left;
-  background-color: var(--pink-light);
-  
+  width: 100%;
+  padding: 0;
+  margin:0;
 }
 
 .mini-social-links li a {
-  display: block;
-  margin: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .5rem;
   text-decoration: none;
-  color: gray;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  background: var(--pink-medium);
   font-size: 20px;
-  line-height: 200%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.mini-social-links li a:hover{
+  background: var(--pink-dark);
 }
 
 .name{
@@ -170,12 +180,28 @@ li.nav-item a:hover {
 /* ABOUT ME SECTION */
 #about-me {
   background-color: var(--pink-medium);
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
 
 #jean-img {
   max-width: 100%;
-  align-self:center;
+  border: solid 1rem white;
+  border-bottom: solid 4.5rem white;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  border-radius: 2%; 
+  box-shadow: 0rem 1rem 2rem black;
+}
+
+@media (max-width: 768px) { 
+  #jean-img {
+    max-width: 60%;
+  }
+}
+
+#blurb {
+  padding: 2rem;
 }
 
 /* TECHNOLOGY SECTION */
@@ -206,7 +232,7 @@ li.nav-item a:hover {
 .social-links ul {
   display: flex;
   justify-content: center;
-	padding: 1rem 0rem 1rem 0rem;
+	padding: 1rem 0rem;
 	list-style: none;
 	width: 100%;
 }
@@ -217,24 +243,36 @@ li.nav-item a:hover {
 }
 
 .social-links li a {
-  display: block;
-  margin: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem .5rem;
   text-decoration: none;
   color: white;
+  background: var(--pink-medium);
+  width: 3rem;
+  height: 3rem;
   font-size: 20px;
-  line-height: 200%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social-links li a:hover {
+  background: var(--pink-light);
 }
 
 /* GO TOP ARROW */
 .go-to-top {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 1.5rem;
+  bottom: 1.5rem;
   color: white;
   background: black;
   z-index: 999;
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;

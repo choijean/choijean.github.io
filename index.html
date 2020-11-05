@@ -19,6 +19,11 @@
   <script src="https://kit.fontawesome.com/1244e90197.js" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
@@ -51,7 +56,7 @@
       </ul>
     </div>
     <div class="name text-center">
-      <h1>Jean Choi: 
+      <h1>Jean Choi:
         <span
         class="text-rotate"
         data-period="2000"
@@ -65,11 +70,11 @@
     <h2>About me</h2>
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-md-3 p-2">
+        <div class="col-md-3 col-sm-12 p-2 text-center align-self-center">
           <img src="images/jean.png" id="jean-img" alt="Jean Choi">
         </div>
-        <div class="col-md-6 p-2">
-          <p class="text-justify"> 
+        <div class="col-md-6 col-sm-12">
+          <p class="text-justify" id="blurb"> 
             Hi there! My name is Jean Choi. I am currently a senior at 
             Portland State University and will be graduating in Spring 2021
             with a Bachelor of Science in Computer Science with a minor 
@@ -106,7 +111,7 @@
     <h2>Say Hello!</h2>
     <form action="https://formspree.io/f/mknpbvbv" method="POST" class="container center" id="form-message">
       <div class="row form-group justify-content-md-center">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-1">
           <label for="name" class="d-none">Name: </label>
           <input type="text" id="name" name="name" class="form-control" placeholder="Name">
         </div>
@@ -128,9 +133,11 @@
         </div>
       </div>
       <div class="row form-group justify-content-md-center">
+        <div class="col-md-8 text-center">
         <button type="submit" class="btn">
           <i class="fas fa-paper-plane"></i> Submit
         </button>
+        </div>
       </div>
     </form>
 
@@ -149,7 +156,9 @@
         <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam icon-3x"></i></a></li>
         <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-square icon-3x"></i></a></li> -->
         <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-symbol icon-3x"></i></a></li> -->
-        <li><a href="discord.html"><i class="fab fa-discord" title="jean#5379"></i></a></li>
+        <li><a href="discord.html"><i class="fab fa-discord" title="jean#5379"data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></a></li>
+
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
       </ul>
     </div>
 

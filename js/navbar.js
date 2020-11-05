@@ -44,5 +44,10 @@ $(document).ready(function () {
   $('.go-to-top').click(function (e) {
     e.preventDefault();
   })
+  // Enable tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
 });
 
