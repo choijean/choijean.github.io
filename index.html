@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
     <!-- Scripts/JQuery 3.2.1-->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/navbar.js"></script>
-  <script type="text/javascript" src="js/title.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <!-- Bootstrap 4.5.2 -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -32,7 +31,7 @@
   <a class="menu-toggle" href="#" data-toggle="tooltip" data-placement="left" title="Menu"><i class="fa fa-bars"></i></a>
   <nav id="navbar-wrapper">
     <ul class="navbar text-right">
-      <li class="nav-item"><a class="scroll" href="#about-me">About Me</a></li>
+      <li class="nav-item"><a class="scroll" href="#about">About Me</a></li>
       <li class="nav-item"><a class="scroll" href="#projects">Projects</a></li>
       <li class="nav-item"><a class="scroll" href="#technologies">Technologies</a></li>
       <li class="nav-item"><a class="scroll" href="#contact">Contact</a></li>
@@ -52,19 +51,29 @@
         <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dark Mode"><i class="far fa-lightbulb"></i></a></li> -->
       </ul>
     </div>
-    <div class="name text-center">
-      <h1>Jean Choi:
-        <span
-        class="text-rotate"
-        data-period="2000"
-        data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
-      </h1>
+    <div class="animated-text">
+      <p class="topText">
+        <p class="titleText">Hi there!</p>
+        <p class="titleText">My name is Jean Choi.</p>
+        <span class="titleText">I'm ... </span>
+        <div>
+          <span class="rotatingText">a software engineer</span><br>
+          <span class="rotatingText">a web developer</span><br>
+          <span class="rotatingText">an artist</span><br>
+          <span class="rotatingText">a musician</span><br>
+          <!-- <span class="rotatingText">Jean Choi.</span> -->
+        </div>
+      </p>
+      <!-- <hr class="banner">
+      <div class="topText">
+        <h1>Bottom text</h1>
+      </div> -->
     </div>
   </section>
   
   <!-- About me -->
-  <section id="about-me" class="pb-5">
-    <h2>About me</h2>
+  <section id="about" class="pb-5">
+    <h2>About Me:</h2>
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-3 col-sm-12 p-2 text-center align-self-center">
@@ -72,7 +81,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <p class="text-justify" id="blurb"> 
-            Hi there! My name is Jean Choi. I am currently a senior at 
+            Hello! My name is Jean Choi. I am currently a senior at 
             Portland State University and will be graduating in Spring 2021
             with a Bachelor of Science in Computer Science with a minor 
             in Mathematics. <br><br>
@@ -93,7 +102,7 @@
 
   <!-- Projects -->
   <section id="projects" class="pb-5">
-    <h2>Projects</h2>
+    <h2>Projects:</h2>
     <div class="container">
       <div class="row">
         <!-- Bonspiel -->
@@ -324,18 +333,12 @@
     <h4>Connect with me:</h4>
     <div class="social-links">
       <ul>
-        <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin-in"></i></a></li>
-        <!-- <li><a href="https://www.linkedin.com/in/jean-choi/"><i class="fab fa-linkedin"></i></a></li> -->
-        <li><a href="https://github.com/choijean"><i class="fab fa-github"></i></a></li>
-        <!-- <li><a href="https://github.com/choijean"><i class="fab fa-github-square"></i></a></li> -->
-        <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram"></i></a></li>
-        <!-- <li><a href="https://www.instagram.com/jeanchoiii/"><i class="fab fa-instagram-square"></i></a></li> -->
-        <!-- <li><a href="https://airbnb.com/h/brady"><i class="fab fa-airbnb"></i></a></li> -->
-        <li><a href="https://open.spotify.com/user/jeanchoiii?si=357BNHN6SaG-CjDLXjXSxA"><i class="fab fa-spotify"></i></a></li>
-        <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam"></i></a></li>
-        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-square"></i></a></li> -->
-        <!-- <li><a href="https://steamcommunity.com/id/jeanchoiii"><i class="fab fa-steam-symbol"></i></a></li> -->
-        <li><a data-toggle="tooltip" data-placement="top" title="jean#5379"><i class="fab fa-discord"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jean-choi/" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/choijean" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/jeanchoiii/" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://open.spotify.com/user/jeanchoiii?si=357BNHN6SaG-CjDLXjXSxA" data-toggle="tooltip" data-placement="bottom" title="Spotify"><i class="fab fa-spotify"></i></a></li>
+        <li><a href="https://steamcommunity.com/id/jeanchoiii" data-toggle="tooltip" data-placement="bottom" title="Steam"><i class="fab fa-steam"></i></a></li>
+        <li><a data-toggle="tooltip" data-placement="bottom" title="jean#5379"><i class="fab fa-discord"></i></a></li>
       </ul>
     </div>
 
@@ -347,9 +350,9 @@
   
   <!-- Footer -->
   <footer class="text-center">
-    <p>Jean Choi <i class="far fa-copyright"></i> 2020</p>
-    <a href="mailto:jean.yj.choi@gmail.com">jean.yj.choi@gmail.com</a> 
     <hr>
+    <p>Jean Choi <i class="far fa-copyright"></i> 2020 | <a href="mailto:jean.yj.choi@gmail.com">jean.yj.choi@gmail.com</a> </p>
+    
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-6 offset">

@@ -36,6 +36,9 @@ h2,h3,h4,h5{
   justify-content: center;
   padding: 2rem;
 }
+h2 {
+  text-decoration: underline;
+}
 
 h4,h5 {
   padding: 1rem;
@@ -126,6 +129,7 @@ li.nav-item a:hover {
   width: 100%;
   height: 100%;
   background-color: var(--pink-light);
+  background: linear-gradient(var(--pink-light), var(--pink-dark));
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -136,7 +140,7 @@ li.nav-item a:hover {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  /* justify-content: center; */
+  align-items: center;
   flex-direction: column;
 }
 .mini-social-links {
@@ -173,13 +177,54 @@ li.nav-item a:hover {
   background: var(--pink-dark);
 }
 
-.name{
-  align-content: center;
+.titleText{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 
-/* ABOUT ME SECTION */
-#about-me {
-  background-color: var(--pink-medium);
+.rotatingText {
+  padding: 0rem 2rem ;
+  font-weight: bold;
+  font-size: 3.5rem; 
+  text-align: center;
+  opacity: 0;
+  position: relative;
+}
+
+.rotatingText:nth-of-type(1) {
+  animation: rotate 2s linear 2s 1 normal forwards;
+}
+
+.rotatingText:nth-of-type(2) {
+  animation: rotate 2s linear 4s 1 normal forwards;
+}
+
+.rotatingText:nth-of-type(3) {
+  animation: rotate 2s linear 6s 1 normal forwards;
+  animation-fill-mode: forwards;
+}
+
+.rotatingText:nth-of-type(4) {
+  animation: rotate 2s linear 8s 1 normal forwards;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* ABOUT SECTION */
+#about {
+  background: linear-gradient(var(--pink-dark), var(--pink-medium));
+  /* background-color: var(--pink-medium); */
 }
 
 #jean-img {
@@ -205,7 +250,8 @@ li.nav-item a:hover {
 
 /* PROJECTS SECTION */
 #projects{
-  background-color: var(--pink-dark);
+  /* background-color: var(--pink-dark); */
+  background: linear-gradient(var(--pink-medium), var(--pink-dark));
 }
 
 .carousel-item img {
@@ -229,12 +275,14 @@ li.nav-item a:hover {
 /* TECHNOLOGY SECTION */
 #technologies {
   height: 100%;
-  background-color: var(--pink-light);
+  background: linear-gradient(var(--pink-dark), var(--pink-light));
+  /* background-color: var(--pink-light); */
 }
 
 /* CONTACT SECTION */
 #contact{
-  background-color: var(--pink-dark);
+  /* background-color: var(--pink-dark); */
+  background: linear-gradient(var(--pink-light), var(--pink-dark));
 }
 
 #form-message{
@@ -254,7 +302,6 @@ li.nav-item a:hover {
 
 .social-links li {
   float: left;
-  background-color: var(--pink-dark);
 }
 
 .social-links li a {
@@ -323,5 +370,5 @@ li.nav-item a:hover {
 /* FOOTER SECTION */
 footer {
   padding: 2.5rem 0rem 2rem;
-  background-color: var(--pink-light);
+  background-color: var(--pink-dark);
 }
