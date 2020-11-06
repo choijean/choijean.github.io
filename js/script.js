@@ -32,7 +32,8 @@ $(document).ready(function () {
   // Detect if window has been scrolled (for gototop button)
   $(window).scroll(function () {
     var $win = $(window);
-    $('.go-to-top').toggleClass('active', $win.scrollTop() > 200);
+    var about = $("#about").offset();
+    $('.go-to-top').toggleClass('active', $win.scrollTop() > (about.top - 300));
   });
 
   // Scroll to top
@@ -40,6 +41,16 @@ $(document).ready(function () {
     e.preventDefault();
   })
 
+  // Show text on scroll
+  // $(window).scroll(function () {
+  //   var $win = $(window);
+  //   var target = $("#about").offset();
+  //   if ($win.scrollTop() > (target.top))
+  //     $('#about').removeClass('preScroll');
+
+
+  //   // alert(target.top);
+  // })
 
 });
 

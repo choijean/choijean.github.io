@@ -64,7 +64,7 @@ a:hover{
 #navbar-wrapper {
 	top: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   width: 0px;
   height: 100%;
@@ -229,10 +229,18 @@ li.nav-item a:hover {
   background: linear-gradient(var(--pink-dark), var(--pink-medium));
 }
 
+.preScroll > * {
+  opacity:0;
+}
+
+.postScroll > * {
+  opacity:1
+}
+
 #jean-img {
   max-width: 100%;
-  border: solid 1rem white;
-  border-bottom: solid 4.5rem white;
+  border: solid 1rem whitesmoke;
+  border-bottom: solid 4.5rem whitesmoke;
   -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
   -ms-border-radius: 2%;
