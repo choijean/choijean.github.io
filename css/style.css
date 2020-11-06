@@ -229,13 +229,13 @@ li.nav-item a:hover {
   background: linear-gradient(var(--pink-dark), var(--pink-medium));
 }
 
-.preScroll > * {
+/* .preScroll > * {
   opacity:0;
 }
 
 .postScroll > * {
   opacity:1
-}
+} */
 
 #jean-img {
   max-width: 100%;
