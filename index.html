@@ -4,7 +4,7 @@
   <title>Jean Choi's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
-    <!-- Scripts/JQuery 3.2.1-->
+  <!-- Scripts/JQuery 3.2.1-->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <!-- Bootstrap 4.5.2 -->
@@ -77,7 +77,7 @@
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-3 col-sm-12 p-2 text-center align-self-center">
-          <img src="images/jean.png" id="jean-img" alt="Jean Choi">
+          <img src="images/jean.png" id="jean-img" alt="Jean Choi" class="rounded">
         </div>
         <div class="col-md-6 col-sm-12">
           <p class="text-justify" id="blurb"> 
@@ -281,8 +281,6 @@
         <!-- GitHub Pages -->
       </div>
 
-
-
     </div>
 
 
@@ -292,7 +290,161 @@
   <!-- Technologies -->
   <section id="technologies">
     <h2>Technology</h2>
-    <h3>(Coming Soon)</h3>
+
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12">
+          <div class="list-group flex-md-row" id="list-tab" role="tablist">
+            <a class="list-group-item m-1 rounded list-group-item-action active" id="list-all-list" data-toggle="list" href="#list-stack" role="tab" aria-controls="full stack">All</a>
+            <a class="list-group-item m-1 rounded list-group-item-action" id="list-frequent-list" data-toggle="list" href="#list-frequent" role="tab" aria-controls="frequentl">I frequently use ...</a>
+            <a class="list-group-item m-1 rounded list-group-item-action" id="list-learn-list" data-toggle="list" href="#list-learn" role="tab" aria-controls="learn">I want to learn...</a>
+          </div>
+          <div class="tab-content p-2 text-center" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-stack" role="tabpanel" aria-labelledby="list-stack-list">
+              <div class="accordion" id="accordionTechAll">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Programming Languages
+                      </button>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTechAll">
+                    <div class="card-body">
+                      <ul class="icon-list">
+                        <li><img class="icon" src="images/icons/c.png">C</li>
+                        <li><img class="icon" src="images/icons/cpp.png">C++</li>
+                        <li><img class="icon" src="images/icons/java.png">Java</li>
+                        <li><img class="icon" src="images/icons/javascript.png">JavaScript</li>
+                        <li><img class="icon" src="images/icons/php.png">PHP</li>
+                        <li><img class="icon" src="images/icons/python.png">Python</li>
+                        <li><img class="icon" src="images/icons/typescript.png">TypeScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Web Development
+                      </button>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTechAll">
+                    <div class="card">
+                      <div class="card-body">
+                        <ul class="icon-list">
+                          <li><img class="icon" src="images/icons/angular.png">Angular</li>
+                          <li><img class="icon" src="images/icons/bootstrap.png">Bootstrap</li>
+                          <li><img class="icon" src="images/icons/css.png">CSS</li>
+                          <li><img class="icon" src="images/icons/html5.png">HTML</li>
+                          <li><img class="icon" src="images/icons/express.png">Express.js</li>
+                          <li><img class="icon" src="images/icons/flask.png">Flask</li>
+                          <li><img class="icon" src="images/icons/jquery.png">JQuery</li>
+                          <li><img class="icon" src="images/icons/node-js.png">Node.js</li>
+                          <li><img class="icon" src="images/icons/postman.png">Postman</li>
+                          <li><img class="icon" src="images/icons/react.png">React</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Databases
+                      </button>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTechAll">
+                    <div class="card-body">
+                      <ul class="icon-list">
+                        <li><img class="icon" src="images/icons/sql.png">SQL</li>
+                        <li><img class="icon" src="images/icons/mongodb.png">MongoDB</li>
+                        <li><img class="icon" src="images/icons/postgresql.png">PostgreSQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Cloud Services
+                      </button>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTechAll">
+                    <div class="card-body">
+                      <ul class="icon-list">
+                        <li><img class="icon" src="images/icons/amazonwebservices.png">AWS</li>
+                        <li><img class="icon" src="images/icons/heroku.png">Heroku</li>
+                        <li><img class="icon" src="images/icons/google-cloud.png">Google Cloud</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Miscellaneous
+                      </button>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionTechAll">
+                    <div class="card-body">
+                      <ul class="icon-list">
+                        <li><img class="icon" src="images/icons/bash.png">Bash</li>
+                        <li><img class="icon" src="images/icons/docker.png">Docker</li>
+                        <li><img class="icon" src="images/icons/gimp.png">Gimp</li>
+                        <li><img class="icon" src="images/icons/git.png">Git</li>
+                        <li><img class="icon" src="images/icons/github.png">GitHub</li>
+                        <li><img class="icon" src="images/icons/gitlab.png">GitLab</li>
+                        <li><img class="icon" src="images/icons/intellij.png">IntelliJ</li>
+                        <li><img class="icon" src="images/icons/pycharm.png">PyCharm</li>
+                        <li><img class="icon" src="images/icons/vsc.png">Visual Studio Code</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-frequent" role="tabpanel" aria-labelledby="list-frequent-list">
+              <div class="card">
+                <div class="card-body">
+                  <ul class="icon-list">
+                    <li><img class="icon" src="images/icons/c.png">C</li>
+                    <li><img class="icon" src="images/icons/javascript.png">JavaScript</li>
+                    <li><img class="icon" src="images/icons/python.png">Python</li>
+                    <li><img class="icon" src="images/icons/bootstrap.png">Bootstrap</li>
+                    <li><img class="icon" src="images/icons/css.png">CSS</li>
+                    <li><img class="icon" src="images/icons/html5.png">HTML</li>
+                    <li><img class="icon" src="images/icons/docker.png">Docker</li>
+                    <li><img class="icon" src="images/icons/express.png">Express.js</li>
+                    <li><img class="icon" src="images/icons/node-js.png">Node.js</li>
+                    <li><img class="icon" src="images/icons/postman.png">Postman</li>
+                    <li><img class="icon" src="images/icons/react.png">React</li>
+                    <li><img class="icon" src="images/icons/vsc.png">Visual Studio Code</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-learn" role="tabpanel" aria-labelledby="list-learn-list">
+              <div class="card">
+                <div class="card-body">
+                  <ul class="icon-list">
+                    <li><img class="icon" src="images/icons/cakephp.png">Cake PHP</li>
+                    <li><img class="icon" src="images/icons/django.png">Django</li>
+                    <li><img class="icon" src="images/icons/drupal.png">Drupal</li>
+                    <li><img class="icon" src="images/icons/ember.png">Ember</li>
+                    <li><img class="icon" src="images/icons/go.png">Go</li>
+                    <li><img class="icon" src="images/icons/adobe-photoshop.png">PhotoShop</li>
+                    <li><img class="icon" src="images/icons/ruby.png">Ruby</li>
+                    <li><img class="icon" src="images/icons/swift.png">Swift</li>
+                    <li><img class="icon" src="images/icons/vuejs.png">VueJS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
@@ -345,7 +497,7 @@
 
   </section>
 
-  <a href="#banner" class="go-to-top scroll"data-toggle="tooltip" data-placement="left" title="Back to Top">
+  <a href="#banner" class="go-to-top scroll" data-toggle="tooltip" data-placement="left" title="Back to Top">
     <i class="fas fa-angle-double-up"></i>
   </a>
   
