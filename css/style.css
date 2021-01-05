@@ -61,6 +61,11 @@ a:hover{
   color: var(--navbar-bg);
 }
 
+
+p.lighter {
+  font-size:15px;
+}
+
 /* NAVBAR */
 #navbar-wrapper {
 	top: 0;
@@ -277,6 +282,47 @@ li.nav-item a:hover {
 
 .carousel-indicators {
   bottom: -2rem;
+}
+
+/* card flip */
+.card-container {
+  perspective: 700px;
+}
+
+.card-flip, .card-container {
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+/* card stack */
+.card-flip {
+  display: grid; 
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
 }
 
 /* TECHNOLOGY SECTION */
